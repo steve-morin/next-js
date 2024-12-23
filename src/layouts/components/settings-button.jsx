@@ -17,13 +17,13 @@ export function SettingsButton({ sx, ...other }) {
     <IconButton
       aria-label="settings"
       onClick={settings.onToggleDrawer}
-      sx={{ p: 0, width: 40, height: 40, ...sx }}
+      sx={{ p: 0, width: 30, height: 30, ...sx }}
       {...other}
     >
-      <Badge color="error" variant="dot" invisible={!settings.canReset}>
+      <Badge color="inherit" variant="dot" invisible={!settings.canReset}>
         <SvgIcon
           component={m.svg}
-          animate={{ rotate: 360 }}
+          // animate={{ rotate: 360 }}
           transition={{ duration: 8, ease: 'linear', repeat: Infinity }}
         >
           {/* https://icon-sets.iconify.design/solar/settings-bold-duotone/ */}

@@ -17,8 +17,8 @@ export function Section({
   layoutQuery,
   methods,
   title = 'Manage the job',
-  imgUrl = `${CONFIG.assetsDir}/assets/illustrations/illustration-dashboard.webp`,
-  subtitle = 'More effectively with optimized workflows.',
+  imgUrl = `${CONFIG.assetsDir}/assets/images/stock/industrial-720706_640.jpg`,
+  subtitle = 'Ethanol Industry Benchmarking',
   ...other
 }) {
   const theme = useTheme();

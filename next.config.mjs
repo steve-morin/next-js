@@ -1,4 +1,4 @@
-const isStaticExport = 'false';
+const isStaticExport = 'true';
 
 const nextConfig = {
   trailingSlash: true,
@@ -16,11 +16,20 @@ const nextConfig = {
       transform: '@mui/lab/{{member}}',
     },
   },
-  webpack(config) {
+  webpack(config, { webpack }) { // Ensure webpack is correctly referenced
     config.module.rules.push({
       test: /\.svg$/,
       use: ['@svgr/webpack'],
     });
+
+    // Add IgnorePlugin to exclude specific files or directories
+    config.plugins.push(
+      new webpack.IgnorePlugin({
+        resourceRegExp: /public\/assets\/images/,
+        resourceRegExp: /public\/assets\/background/,
+        resourceRegExp: /public\/assets\/illustrations/,                
+      })
+    );
 
     return config;
   },

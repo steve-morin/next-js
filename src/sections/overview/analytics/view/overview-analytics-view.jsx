@@ -27,8 +27,8 @@ import { AnalyticsConversionRates } from '../analytics-conversion-rates';
 export function OverviewAnalyticsView() {
   return (
     <DashboardContent maxWidth="xl">
-      <Typography variant="h4" sx={{ mb: { xs: 3, md: 5 } }}>
-        Hi, Welcome back 👋
+      <Typography variant="h5" sx={{ mb: { xs: 3, md: 5 } }}>
+        Ethanol Benchmarking
       </Typography>
 
       <Grid container spacing={3}>
@@ -37,9 +37,9 @@ export function OverviewAnalyticsView() {
             title="Weekly sales"
             percent={2.6}
             total={714000}
-            icon={
-              <img alt="icon" src={`${CONFIG.assetsDir}/assets/icons/glass/ic-glass-bag.svg`} />
-            }
+            // icon={
+            //   <img alt="icon" src={`${CONFIG.assetsDir}/assets/icons/glass/ic-glass-bag.svg`} />
+            // }
             chart={{
               categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
               series: [22, 8, 35, 50, 82, 84, 77, 12],
@@ -52,10 +52,10 @@ export function OverviewAnalyticsView() {
             title="New users"
             percent={-0.1}
             total={1352831}
-            color="secondary"
-            icon={
-              <img alt="icon" src={`${CONFIG.assetsDir}/assets/icons/glass/ic-glass-users.svg`} />
-            }
+            // color="secondary"
+            // icon={
+            //   <img alt="icon" src={`${CONFIG.assetsDir}/assets/icons/glass/ic-glass-users.svg`} />
+            // }
             chart={{
               categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
               series: [56, 47, 40, 62, 73, 30, 23, 54],
@@ -68,10 +68,10 @@ export function OverviewAnalyticsView() {
             title="Purchase orders"
             percent={2.8}
             total={1723315}
-            color="warning"
-            icon={
-              <img alt="icon" src={`${CONFIG.assetsDir}/assets/icons/glass/ic-glass-buy.svg`} />
-            }
+            // color="warning"
+            // icon={
+            //   <img alt="icon" src={`${CONFIG.assetsDir}/assets/icons/glass/ic-glass-buy.svg`} />
+            // }
             chart={{
               categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
               series: [40, 70, 50, 28, 70, 75, 7, 64],
@@ -84,10 +84,10 @@ export function OverviewAnalyticsView() {
             title="Messages"
             percent={3.6}
             total={234}
-            color="error"
-            icon={
-              <img alt="icon" src={`${CONFIG.assetsDir}/assets/icons/glass/ic-glass-message.svg`} />
-            }
+            // color="error"
+            // icon={
+            //   <img alt="icon" src={`${CONFIG.assetsDir}/assets/icons/glass/ic-glass-message.svg`} />
+            // }
             chart={{
               categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
               series: [56, 30, 23, 54, 47, 40, 62, 73],
@@ -151,21 +151,21 @@ export function OverviewAnalyticsView() {
           />
         </Grid>
 
-        <Grid xs={12} md={6} lg={8}>
+        {/* <Grid xs={12} md={6} lg={8}>
           <AnalyticsNews title="News" list={_analyticPosts} />
-        </Grid>
+        </Grid> */}
 
-        <Grid xs={12} md={6} lg={4}>
+        {/* <Grid xs={12} md={6} lg={4}>
           <AnalyticsOrderTimeline title="Order timeline" list={_analyticOrderTimeline} />
-        </Grid>
+        </Grid> */}
 
-        <Grid xs={12} md={6} lg={4}>
+        {/* <Grid xs={12} md={6} lg={4}>
           <AnalyticsTrafficBySite title="Traffic by site" list={_analyticTraffic} />
-        </Grid>
+        </Grid> */}
 
-        <Grid xs={12} md={6} lg={8}>
+        {/* <Grid xs={12} md={6} lg={8}>
           <AnalyticsTasks title="Tasks" list={_analyticTasks} />
-        </Grid>
+        </Grid> */}
       </Grid>
     </DashboardContent>
   );

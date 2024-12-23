@@ -29,10 +29,10 @@ export function ChatNavItemSkeleton({ sx, amount = 6, ...other }) {
 export function ChatHeaderSkeleton({ sx, ...other }) {
   return (
     <Stack direction="row" alignItems="center" sx={{ width: 1, ...sx }} {...other}>
-      <Skeleton variant="circular" sx={{ width: 40, height: 40 }} />
+      <Skeleton variant="circular" sx={{ width: 30, height: 30 }} />
       <Stack spacing={1} flexGrow={1} sx={{ mx: 2 }}>
         <Skeleton sx={{ width: 96, height: 10 }} />
-        <Skeleton sx={{ width: 40, height: 10 }} />
+        <Skeleton sx={{ width: 30, height: 10 }} />
       </Stack>
       <Skeleton variant="circular" sx={{ width: 28, height: 28 }} />
       <Skeleton variant="circular" sx={{ width: 28, height: 28, mx: 1 }} />

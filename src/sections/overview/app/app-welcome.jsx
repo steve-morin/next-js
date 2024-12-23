@@ -14,11 +14,12 @@ export function AppWelcome({ title, description, action, img, sx, ...other }) {
     <Box
       sx={{
         ...bgGradient({
-          color: `to right, ${varAlpha(
+          color: `to left, ${varAlpha(
             theme.vars.palette.grey['900Channel'],
-            0.88
+            0.20
           )} 0%, ${theme.vars.palette.grey[900]} 75%`,
-          imgUrl: `${CONFIG.assetsDir}/assets/background/background-5.webp`,
+          // imgUrl: `${CONFIG.assetsDir}/assets/background/background-5.webp`,
+          imgUrl: `${CONFIG.assetsDir}/assets/images/stock/process-3.jpeg`,
         }),
         pt: 5,
         pb: 5,

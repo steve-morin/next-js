@@ -25,7 +25,7 @@ export function NotificationItem({ notification }) {
         <Stack
           alignItems="center"
           justifyContent="center"
-          sx={{ width: 40, height: 40, borderRadius: '50%', bgcolor: 'background.neutral' }}
+          sx={{ width: 30, height: 30, borderRadius: '50%', bgcolor: 'background.neutral' }}
         >
           <Box
             component="img"

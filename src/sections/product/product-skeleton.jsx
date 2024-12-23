@@ -22,7 +22,7 @@ export function ProductItemSkeleton({ sx, amount = 16, ...other }) {
             <Skeleton variant="circular" sx={{ width: 16, height: 16 }} />
             <Skeleton variant="circular" sx={{ width: 16, height: 16 }} />
           </Stack>
-          <Skeleton sx={{ width: 40, height: 16 }} />
+          <Skeleton sx={{ width: 30, height: 16 }} />
         </Stack>
       </Stack>
     </Paper>

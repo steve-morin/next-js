@@ -136,7 +136,7 @@ export function ProfilePostItem({ post }) {
         inputProps={{ id: `comment-input-${post.id}`, 'aria-label': 'Write a comment' }}
         sx={{
           pl: 1.5,
-          height: 40,
+          height: 30,
           borderRadius: 1,
           border: (theme) => `solid 1px ${varAlpha(theme.vars.palette.grey['500Channel'], 0.32)}`,
         }}

@@ -1,13 +1,11 @@
-import { HomeView } from 'src/sections/home/view';
+import { CONFIG } from 'src/config-global';
+
+import { OverviewAppView } from 'src/sections/overview/app/view';
 
 // ----------------------------------------------------------------------
 
-export const metadata = {
-  title: 'Minimals UI: The starting point for your next project',
-  description:
-    'The starting point for your next project with Minimal UI Kit, built on the newest version of Material-UI ©, ready to be customized to your style',
-};
+export const metadata = { title: `Dashboard - ${CONFIG.appName}` };
 
 export default function Page() {
-  return <HomeView />;
+  return <OverviewAppView />;
 }

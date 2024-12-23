@@ -52,7 +52,7 @@ export function HomeMinimal({ sx, ...other }) {
             gap={3}
             display="flex"
           >
-            <SvgColor src={item.icon} sx={{ width: 40, height: 40 }} />
+            <SvgColor src={item.icon} sx={{ width: 30, height: 30 }} />
             <Stack spacing={1}>
               <Typography variant="h5" component="h6">
                 {item.title}

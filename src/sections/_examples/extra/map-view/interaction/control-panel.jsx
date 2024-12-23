@@ -53,7 +53,7 @@ export function ControlPanel({ settings, onChange }) {
               sx={{
                 '& input': {
                   py: 0.25,
-                  width: 40,
+                  width: 30,
                   fontSize: 14,
                   borderRadius: 0.5,
                   textAlign: 'center',

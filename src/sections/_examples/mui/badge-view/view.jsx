@@ -76,16 +76,16 @@ export function BadgeView() {
       component: (
         <ComponentBlock sx={{ gap: 4 }}>
           <Badge color="info" badgeContent=" ">
-            <Box sx={{ width: 40, height: 40, bgcolor: 'warning.main' }} />
+            <Box sx={{ width: 30, height: 30, bgcolor: 'warning.main' }} />
           </Badge>
           <Badge color="info" badgeContent=" " variant="dot">
-            <Box sx={{ width: 40, height: 40, bgcolor: 'warning.main' }} />
+            <Box sx={{ width: 30, height: 30, bgcolor: 'warning.main' }} />
           </Badge>
           <Badge color="info" overlap="circular" badgeContent=" ">
             <Box
               sx={{
-                width: 40,
-                height: 40,
+                width: 30,
+                height: 30,
                 borderRadius: '50%',
                 bgcolor: 'warning.main',
               }}
@@ -94,8 +94,8 @@ export function BadgeView() {
           <Badge color="info" overlap="circular" badgeContent=" " variant="dot">
             <Box
               sx={{
-                width: 40,
-                height: 40,
+                width: 30,
+                height: 30,
                 borderRadius: '50%',
                 bgcolor: 'warning.main',
               }}
@@ -116,8 +116,8 @@ export function BadgeView() {
             >
               <Box
                 sx={{
-                  width: 40,
-                  height: 40,
+                  width: 30,
+                  height: 30,
                   borderRadius: '50%',
                   bgcolor: 'grey.400',
                 }}

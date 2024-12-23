@@ -146,7 +146,7 @@ const sizes = [
         gap: theme.spacing(0.5),
         padding: theme.spacing(0, 1),
       },
-      [`&.${fabClasses.sizeMedium}`]: { height: 40, minHeight: 40, borderRadius: 40 / 2 },
+      [`&.${fabClasses.sizeMedium}`]: { height: 30, minHeight: 30, borderRadius: 40 / 2 },
     }),
   },
 ];

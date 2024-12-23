@@ -18,7 +18,7 @@ export const CollapseButton = styled(({ selected, children, disabled, ...other }
   </ListItemButton>
 ))(({ theme }) => ({
   ...theme.typography.overline,
-  height: 40,
+  height: 30,
   paddingLeft: theme.spacing(2.5),
   justifyContent: 'space-between',
   paddingRight: theme.spacing(1.5),

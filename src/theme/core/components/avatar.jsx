@@ -83,8 +83,8 @@ const MuiAvatarGroup = {
     root: ({ ownerState }) => ({
       justifyContent: 'flex-end',
       ...(ownerState.variant === 'compact' && {
-        width: 40,
-        height: 40,
+        width: 30,
+        height: 30,
         position: 'relative',
         [`& .${avatarGroupClasses.avatar}`]: {
           margin: 0,

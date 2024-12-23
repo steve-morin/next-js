@@ -97,7 +97,7 @@ function Item({ item, sx, ...other }) {
           <Box
             component="span"
             sx={{
-              width: 40,
+              width: 30,
               typography: 'caption',
               color: 'text.primary',
               fontWeight: 'fontWeightMedium',

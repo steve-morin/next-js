@@ -2,7 +2,7 @@ import { setFont, pxToRem, responsiveFontSizes } from '../styles/utils';
 
 // ----------------------------------------------------------------------
 
-export const defaultFont = 'Public Sans Variable';
+export const defaultFont = 'Roboto, sans-serif';
 
 export const primaryFont = setFont(defaultFont);
 
@@ -69,11 +69,11 @@ export const typography = {
   },
   body1: {
     lineHeight: 1.5,
-    fontSize: pxToRem(16),
+    fontSize: pxToRem(14),
   },
   body2: {
     lineHeight: 22 / 14,
-    fontSize: pxToRem(14),
+    fontSize: pxToRem(12),
   },
   caption: {
     lineHeight: 1.5,

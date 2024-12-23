@@ -36,9 +36,9 @@ export function OverviewAppView() {
       <Grid container spacing={3}>
         <Grid xs={12} md={8}>
           <AppWelcome
-            title={`Welcome back 👋 \n ${user?.displayName}`}
-            description="If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything."
-            img={<SeoIllustration hideBackground />}
+            title={`Welcome \n ${user?.displayName}`}
+            description="Welcome to the Ethanol Benchmarking Platform, your premier destination for comprehensive ethanol benchmarking and industry analysis. Whether you're a producer, investor, or researcher, our platform provides you with real-time data, market trends, and performance metrics. Stay ahead of the curve with our in-depth reports, expert insights, and user-friendly tools designed to enhance your decision-making process. Explore the dynamic world of ethanol with us and fuel your growth with data-driven precision."
+            // img={<SeoIllustration hideBackground />}
             action={
               <Button variant="contained" color="primary">
                 Go now
@@ -91,14 +91,26 @@ export function OverviewAppView() {
 
         <Grid xs={12} md={6} lg={4}>
           <AppCurrentDownload
-            title="Current download"
-            subheader="Downloaded by operating system"
+            title="Added Production"
+            subheader=""
             chart={{
               series: [
-                { label: 'Mac', value: 12244 },
-                { label: 'Window', value: 53345 },
-                { label: 'iOS', value: 44313 },
-                { label: 'Android', value: 78343 },
+                { label: 'Fermenter Alcohol%', value: 7250000 },
+                { label: 'Base Loss', value: 0 },
+                { label: 'Batches Improvement', value: 100000000 },
+                { label: 'Final Product Moisture Improvement', value: 210000 },
+              ],
+            }}
+          />
+        </Grid>
+        <Grid xs={12} md={6} lg={4}>
+          <AppCurrentDownload
+            title="Added Revenue"
+            subheader=""
+            chart={{
+              series: [
+                { label: 'Steam Production', value: 359030 },
+                { label: 'Added Production', value: 5373000 },
               ],
             }}
           />
@@ -153,7 +165,7 @@ export function OverviewAppView() {
           />
         </Grid>
 
-        <Grid xs={12} lg={8}>
+        {/* <Grid xs={12} lg={8}>
           <AppNewInvoice
             title="New invoice"
             tableData={_appInvoices}
@@ -165,21 +177,21 @@ export function OverviewAppView() {
               { id: '' },
             ]}
           />
-        </Grid>
+        </Grid> */}
 
-        <Grid xs={12} md={6} lg={4}>
+        {/* <Grid xs={12} md={6} lg={4}>
           <AppTopRelated title="Related applications" list={_appRelated} />
-        </Grid>
+        </Grid> */}
 
-        <Grid xs={12} md={6} lg={4}>
+        {/* <Grid xs={12} md={6} lg={4}>
           <AppTopInstalledCountries title="Top installed countries" list={_appInstalled} />
-        </Grid>
-
+        </Grid> */}
+{/* 
         <Grid xs={12} md={6} lg={4}>
           <AppTopAuthors title="Top authors" list={_appAuthors} />
-        </Grid>
+        </Grid> */}
 
-        <Grid xs={12} md={6} lg={4}>
+        {/* <Grid xs={12} md={6} lg={4}>
           <Box sx={{ gap: 3, display: 'flex', flexDirection: 'column' }}>
             <AppWidget
               title="Conversion"
@@ -199,7 +211,7 @@ export function OverviewAppView() {
               sx={{ bgcolor: 'info.dark', [`& .${svgColorClasses.root}`]: { color: 'info.light' } }}
             />
           </Box>
-        </Grid>
+        </Grid> */}
       </Grid>
     </DashboardContent>
   );

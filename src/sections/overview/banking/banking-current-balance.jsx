@@ -37,7 +37,7 @@ export function BankingCurrentBalance({ list, sx, ...other }) {
           right: 0,
           mx: '28px',
           zIndex: -2,
-          height: 40,
+          height: 30,
           bottom: -16,
           content: "''",
           opacity: 0.16,

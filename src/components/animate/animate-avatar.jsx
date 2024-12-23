@@ -5,7 +5,7 @@ import Avatar from '@mui/material/Avatar';
 
 // ----------------------------------------------------------------------
 
-export function AnimateAvatar({ sx, slotProps, children, width = 40, ...other }) {
+export function AnimateAvatar({ sx, slotProps, children, width = 30, ...other }) {
   const borderWidth = slotProps?.overlay?.border ?? 2;
 
   const spacing = slotProps?.overlay?.spacing ?? 2;
@@ -41,27 +41,27 @@ export function AnimateAvatar({ sx, slotProps, children, width = 40, ...other })
 
       <Box
         component={m.span}
-        animate={{ rotate: 360 }}
-        transition={{
-          duration: 8,
-          ease: 'linear',
-          repeat: Infinity,
-          ...slotProps?.animate?.transition,
-        }}
-        sx={{
-          top: 0,
-          left: 0,
-          width: 1,
-          height: 1,
-          position: 'absolute',
-          borderRadius: 'inherit',
-          background: slotProps?.overlay?.color ?? 'conic-gradient(cyan, magenta, yellow, cyan)',
-          mask: 'linear-gradient(#FFF 0 0) content-box, linear-gradient(#FFF 0 0)',
-          WebkitMask: 'linear-gradient(#FFF 0 0) content-box, linear-gradient(#FFF 0 0)',
-          maskComposite: 'exclude',
-          WebkitMaskComposite: 'xor',
-          p: `${borderWidth}px`,
-        }}
+        // animate={{ rotate: 360 }}
+        // transition={{
+        //   duration: 8,
+        //   ease: 'linear',
+        //   repeat: Infinity,
+        //   ...slotProps?.animate?.transition,
+        // }}
+        // sx={{
+        //   top: 0,
+        //   left: 0,
+        //   width: 1,
+        //   height: 1,
+        //   position: 'absolute',
+        //   borderRadius: 'inherit',
+        //   background: slotProps?.overlay?.color ?? 'conic-gradient(cyan, magenta, yellow, cyan)',
+        //   mask: 'linear-gradient(#FFF 0 0) content-box, linear-gradient(#FFF 0 0)',
+        //   WebkitMask: 'linear-gradient(#FFF 0 0) content-box, linear-gradient(#FFF 0 0)',
+        //   maskComposite: 'exclude',
+        //   WebkitMaskComposite: 'xor',
+        //   p: `${borderWidth}px`,
+        // }}
       />
     </Box>
   );

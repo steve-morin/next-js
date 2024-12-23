@@ -90,8 +90,8 @@ export function AnimateBorder({ animate, sx }) {
       component="span"
       ref={rootRef}
       sx={{
-        minWidth: 40,
-        minHeight: 40,
+        minWidth: 30,
+        minHeight: 30,
         position: 'relative',
         borderRadius: 'inherit',
         '&::before': {

@@ -34,7 +34,7 @@ export function MailItemSkeleton({ amount = 6, sx, ...other }) {
       sx={{ py: 1, ...sx }}
       {...other}
     >
-      <Skeleton variant="circular" sx={{ width: 40, height: 40 }} />
+      <Skeleton variant="circular" sx={{ width: 30, height: 30 }} />
 
       <Stack spacing={1} flexGrow={1}>
         <Skeleton sx={{ width: 0.75, height: 10 }} />

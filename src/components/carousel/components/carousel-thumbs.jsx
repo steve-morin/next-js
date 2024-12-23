@@ -130,7 +130,7 @@ function useMaskStyle(axis) {
       '&::before, &::after': {
         ...baseStyles,
         left: 0,
-        height: 40,
+        height: 30,
         width: '100%',
       },
       '&::before': {
@@ -148,7 +148,7 @@ function useMaskStyle(axis) {
     '&::before, &::after': {
       ...baseStyles,
       top: 0,
-      width: 40,
+      width: 30,
       height: '100%',
     },
     '&::before': {

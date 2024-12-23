@@ -16,8 +16,8 @@ export function AccountButton({ photoURL, displayName, sx, ...other }) {
   const renderFallback = (
     <Avatar
       sx={{
-        width: 40,
-        height: 40,
+        width: 30,
+        height: 30,
         border: `solid 2px ${theme.vars.palette.background.default}`,
       }}
     >

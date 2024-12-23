@@ -61,7 +61,7 @@ export function BankingInviteFriends({ price, title, imgUrl, description, sx, ..
         }}
         sx={{
           pl: 1.5,
-          height: 40,
+          height: 30,
           borderRadius: 1,
           bgcolor: varAlpha(theme.vars.palette.common.blackChannel, 0.12),
         }}

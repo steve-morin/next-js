@@ -38,8 +38,8 @@ export function LanguagePopover({ data = [], sx, ...other }) {
         onClick={popover.onOpen}
         sx={{
           p: 0,
-          width: 40,
-          height: 40,
+          width: 30,
+          height: 30,
           ...(popover.open && { bgcolor: 'action.selected' }),
           ...sx,
         }}

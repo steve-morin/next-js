@@ -24,7 +24,7 @@ export function ChatRoomAttachments({ attachments }) {
         file={attachment.preview}
         onDownload={() => console.info('DOWNLOAD')}
         slotProps={{ icon: { width: 24, height: 24 } }}
-        sx={{ width: 40, height: 40, bgcolor: 'background.neutral' }}
+        sx={{ width: 30, height: 30, bgcolor: 'background.neutral' }}
       />
 
       <ListItemText

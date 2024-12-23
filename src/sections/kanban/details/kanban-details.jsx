@@ -154,7 +154,7 @@ export function KanbanDetails({ task, openDetails, onUpdateTask, onDeleteTask, o
 
       {/* Assignee */}
       <Box sx={{ display: 'flex' }}>
-        <StyledLabel sx={{ height: 40, lineHeight: '40px' }}>Assignee</StyledLabel>
+        <StyledLabel sx={{ height: 30, lineHeight: '40px' }}>Assignee</StyledLabel>
 
         <Box sx={{ gap: 1, display: 'flex', flexWrap: 'wrap' }}>
           {task.assignee.map((user) => (

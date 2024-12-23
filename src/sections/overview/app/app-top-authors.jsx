@@ -65,8 +65,8 @@ function Item({ item, index, sx, ...other }) {
 
       <Box
         sx={{
-          width: 40,
-          height: 40,
+          width: 30,
+          height: 30,
           display: 'flex',
           borderRadius: '50%',
           alignItems: 'center',

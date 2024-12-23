@@ -178,7 +178,7 @@ export function AccountDrawer({ data = [], sx, ...other }) {
           </Stack>
 
           <Box sx={{ px: 2.5, py: 3 }}>
-            <UpgradeBlock />
+            {/* <UpgradeBlock /> */}
           </Box>
         </Scrollbar>
 
